@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+@media only screen and (min-width: 768px) {
+    .container {
+        width: 768px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .container {
+        width: 1024px;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .container {
+        width: 1280px;
+    }
+}
+
+
+/* ------------- NAVIGACIJA ----------------- */
+#LOGO {
+    width: 318px;
+    height: 96px;
+}
+
+nav > .container {
+    padding: 30px 25px 10px 10px;
+    /* background-color: green; */
+}
+
+.topNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hamburgerIcon {
+    width: 50px;
+    height: 50px;
+    /* background-color: brown; */
+}
+
+.mainNav {
+    /* display: none; */
+}
+
+/* odavde ide kopirano */
+.hamburgerPrep {
+    top: 0;
+    left: 0;
+    position: absolute;
+    /* overflow: hidden; */
+    width: 100%;
+    /* height: 100%; */
+    min-height: 100%;
+    background-color: rgb(169,169,169, 0.5);
+}
+
+.hamburgerMenu{
+    width: 80%;
+    /* height: 200%; */
+    min-height: 100%;
+    position: relative;
+    background-color: whitesmoke;
+    padding: 10px 0px;
+}
+
+.hamburgerTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+#hamburgerLogo {
+    height: 60px;
+}
+
+#closeBtn {
+    height: 45px;
+    margin-right: 10px;
+}
+
+.kategorijaNaslov {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0px;
+    width: 80%;
+    height: 30px;
+    background-color: #990000;
+}
+
+.kategorijaNav > ul{
+    width: 60%;
+    margin-left: 10px;
+}
+
+.kategorijaNaslov > p {
+    font-size: 25px;
+}
+
+.kategorijaNav > ul {
+    font-size: 25px;  
+}
+
+@media only screen and (min-width: 768px) {
+    .hamburgerIcon {
+        display: none;
+    }
+
+    .topNav .mainNav {
+        width: 100%;
+    }
+
+    .mainNav {
+        display: block;
+        border-top: 2px solid grey;
+        border-bottom: 2px solid grey;
+        margin-top: 20px;
+        /* background-color: green; */
+    }
+
+    .mainNav > ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .mainNav > ul > a:hover {
+        border-radius: 20px 20px 0px 0px;
+        background-color: #990000;
+    }
+
+    .mainNav > ul > a > li{
+        padding: 20px 20px 21px 20px;
+        font-size: 21px;
+        height: 60px;
+        text-align: center;
+        /* background-color: yellow; */
+    }
+
+    .mainNav > ul > a:link, .mainNav > ul > a:visited{
+        text-decoration: none;
+        color: black;
+    }
+}
+
+
+@media only screen and (min-width: 1024px) {
+    .hamburgerPrep {
+        display: none;
+    }
+}
